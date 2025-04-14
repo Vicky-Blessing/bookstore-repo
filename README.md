@@ -1,97 +1,94 @@
-Overview
+OVERVIEW.
 This repository contains a comprehensive SQL script for creating a relational database for a bookstore management system. The database is designed to handle all aspects of bookstore operations including inventory management, customer orders, shipping, and order tracking.
 
-Database Schema
+DATABASE SCHEMA.
 The database consists of 15 tables that model the bookstore's operations:
 
 Core Entities:
 
-publisher - Stores book publisher information
+a)publisher - Stores book publisher information 
 
-author - Contains author details
+b)author - Contains author details
 
-book - Main book information
+c)book - Main book information
 
-book_language - Language information for books
+d)book_language - Language information for books
 
-customer - Customer details
+e)customer - Customer details
 
-Order Management:
+f)Order Management:
 
-cust_order - Customer orders
+g)cust_order - Customer orders
 
-order_line - Individual items within orders
+h)order_line - Individual items within orders
 
-order_status - Status options for orders
+i)order_status - Status options for orders
 
-order_history - Tracking order status changes
+j)order_history - Tracking order status changes
 
-Shipping & Addresses:
+k)Shipping & Addresses:
 
-country - Country reference data
+l)country - Country reference data
 
-address - Physical address information
+m)address - Physical address information
 
-address_status - Status of addresses
+n)address_status - Status of addresses
 
-customer_address - Linking customers to addresses
+o)customer_address - Linking customers to addresses
 
-shipping_method - Available shipping options
+p)shipping_method - Available shipping options
 
-Relationships:
+*Relationships: book_author - Many-to-many relationship between books and authors
 
-book_author - Many-to-many relationship between books and authors
+*Key Features: Comprehensive Data Model: Covers all aspects of bookstore operations
 
-Key Features
-Comprehensive Data Model: Covers all aspects of bookstore operations
+*Performance Optimized: Includes appropriate indexes for faster queries
 
-Performance Optimized: Includes appropriate indexes for faster queries
+*Sample Data: Populated with realistic sample data for testing
 
-Sample Data: Populated with realistic sample data for testing
+*Referential Integrity: Proper foreign key constraints maintain data consistency
 
-Referential Integrity: Proper foreign key constraints maintain data consistency
+*Normalized Design: Follows database normalization principles
 
-Normalized Design: Follows database normalization principles
-
-Installation
-Execute the entire SQL script in a MySQL environment
+*Installation: Execute the entire SQL script in a MySQL environment, MySQL Workbench.
 
 The script will:
 
-Create the bookstore database
+a)Create the bookstore database
 
-Create all tables with proper constraints
+b)Create all tables with proper constraints
 
-Insert sample data
+c)Insert sample data
 
-Create necessary indexes
+d)Create necessary indexes
+ 
+e)Sample Queries
 
-Sample Queries
 The script includes several useful queries for testing and demonstration:
 
-Count records in each table
+a)Count records in each table
 
-Show books with their authors
+b)Show books with their authors
 
-Find books published after 1950
+c)Find books published after 1950
 
-Display all orders with customer details
+d)Display all orders with customer details
 
-Show order line items
+e)Show order line items
 
-View customer addresses with country information
+f)View customer addresses with country information
 
-Track order status history
+g)Track order status history
 
-Calculate total sales by book
+h)Calculate total sales by book
 
-Analyze sales by customer
+i)Analyze sales by customer
 
-Check for unused indexes
+j)Check for unused indexes
 
-Identify books without authors
+k)Identify books without authors
 
-Find customers without orders
+l)Find customers without orders
 
 Usage Examples
 Find Books by Author
